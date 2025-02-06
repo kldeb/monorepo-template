@@ -4,7 +4,15 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {},
+  "scripts": {
+    "dev": "sst dev",
+    "deploy:prod": "sst deploy --stage production",
+    "diagnostic": "sst diagnostic",
+    "refresh": "sst refresh",
+    "remove": "sst remove",
+    "typecheck": "bun --filter=* typecheck",
+    "unlock": "sst unlock"
+  },
   "devDependencies": {
     "@tsconfig/node22": "^22",
     "typescript": "^5"
